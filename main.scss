@@ -33,6 +33,10 @@ p {
 
 
 // HEADER
+.navbar>.container-fluid {
+    padding: 0 !important;
+}
+
 header .background-image {
     position: absolute;
     top: 0;
@@ -73,6 +77,10 @@ header .background-image {
         font-size: 19px;
         font-weight: 400;
 
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(100%) !important;
     }
 
     a.nav-link.active {
@@ -172,7 +180,7 @@ header .background-image {
 
 @media (max-width: 990px) {
     .img-setting img {
-        right: -120px;
+        right: -84px;
         position: relative;
         top: 52px;
 
@@ -196,7 +204,7 @@ header .background-image {
     .img-setting img {
         right: -65px;
         position: relative;
-        top: px;
+        top: 40px;
     }
 
     .hero h1 {
@@ -211,6 +219,64 @@ header .background-image {
         display: flex;
         gap: 10px;
     }
+  
+
+}
+
+@media (max-width: 766px) {
+    .hero .row {
+        display: flex;
+        gap: 30px;
+    }
+
+    .img-setting img {
+        right: -42px;
+        position: relative;
+        top: 0px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 10px;
+    }
+
+}
+@media (max-width: 425px){
+    .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 15px !important;
+        font-weight: 400;
+    }
+    .header .btn-primary {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero .row {
+        display: flex;
+        gap: 56px;
+    }
+
+    .img-setting img {
+        right: -42px;
+        position: relative;
+        top: 0px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .hero p {
+        font-size: 10px;
+        width: 274px;
+    }
 
 }
 
@@ -223,9 +289,12 @@ header .background-image {
     }
 }
 
+.feature-section {
+    padding: 90px 162px;
+}
+
 .section .box-body {
     background: #191C1C !important;
-    width: 465px;
     height: 190px;
     border-radius: 25px;
     padding: 25px;
@@ -253,6 +322,120 @@ header .background-image {
 
 .section .reverse {
     flex-direction: row-reverse;
+}
+
+// RESPONSIVE
+@media (max-width: 1218px) {
+
+    .feature-section {
+        padding: 0;
+        margin-top: 70px;
+    }
+
+    .feature-section .row {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+
+
+}
+
+@media (max-width: 650px) {
+
+    .feature-section .row {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 25px;
+    }
+
+    .section .box-body {
+        height: 150px;
+        padding: 20px;
+
+    }
+
+    .section .box-body i {
+        font-size: 20px;
+        width: 66px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 2;
+    }
+
+    .section .box-body .content h4 {
+        font-size: 20px;
+        width: 100%;
+
+    }
+
+    .section .box-body .content p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 425px) {
+
+    .section .box-body {
+        height: 150px;
+        padding: 20px;
+
+    }
+
+    .feature-section .short img {
+        width: 60%;
+    }
+
+    .section .box-body i {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 2;
+        flex-shrink: 0;
+    }
+
+    .section .box-body .content h4 {
+        font-size: 20px;
+
+    }
+
+    .section .box-body .content p {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 325px) {
+
+    .section .box-body {
+        height: 150px;
+        padding: 20px;
+
+    }
+
+    .section .box-body i {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 2;
+        flex-shrink: 0;
+    }
+
+    .section .box-body .content h4 {
+        font-size: 16px;
+
+    }
+
+    .section .box-body .content p {
+        font-size: 11px;
+    }
+
 }
 
 // why we chose
@@ -289,6 +472,51 @@ header .background-image {
     opacity: 60%;
 
 }
+
+// RESPONSIVE
+@media (max-width: 990px) {
+    .chose .box h2 {
+        font-size: 37px;
+    }
+
+    .chose .box p {
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .chose .box h2 {
+        font-size: 28px;
+        width: 105%;
+    }
+
+    .box-material {
+        padding: 40px 30px;
+    }
+
+    .chose .box p {
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 425px) {
+    .chose .box h2 {
+        font-size: 26px;
+        width: 105%;
+    }
+
+    .box-material {
+        padding: 30px 0px;
+    }
+
+    .chose .box p {
+        font-size: 13px;
+
+    }
+}
+
 
 // LOCAL PROSPAIRTY
 .chose-sec .duo-box {
@@ -343,6 +571,85 @@ header .background-image {
     padding: 2rem;
 }
 
+// RESPONSIVE
+
+@media (max-width: 990px) {
+    .chose-sec .duo-box {
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 766px) {
+    .chose-sec .duo-box h3 {
+        font-size: 35px;
+    }
+
+    .chose-sec .duo-box p {
+        font-size: 14px;
+    }
+
+    .chose-sec .border-line {
+        padding: 0;
+        margin-block: 50px;
+    }
+
+    .chose-sec .three-boxes {
+        padding: 0 !important;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .chose-sec .duo-box h3 {
+        font-size: 26px;
+    }
+
+    .chose-sec .duo-box p {
+        font-size: 12px;
+    }
+
+    .chose-sec .border-line {
+        padding: 0;
+        margin-block: 50px;
+    }
+
+    .chose-sec .three-boxes {
+        padding: 0 !important;
+    }
+
+    .chose-sec .three-boxes h5 {
+        font-size: 20px;
+    }
+
+    .chose-sec .three-boxes span {
+        font-size: 12px;
+    }
+
+    .chose-sec .three-boxes .three-content {
+        margin-bottom: 20px
+    }
+
+    .chose-sec .icons i {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .chose-sec .duo-box .row {
+        padding: 30px !important;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .chose-sec .duo-box .row {
+        padding: 25px !important;
+    }
+}
+
 // QUESTION ANSWER SECTION
 .accordion {
     --bs-accordion-btn-bg: #191c1c;
@@ -388,6 +695,30 @@ header .background-image {
 .questions-sec span {
     font-size: 20px;
     color: #000000;
+}
+
+// RESPONSIVE
+@media (max-width: 425px) {
+
+    .questions-sec h3,
+    .questions-sec .h3 {
+        font-size: 30px;
+    }
+
+    .questions-sec span {
+        font-size: 15px;
+
+    }
+
+    .accordion-button {
+        padding: 20px !important;
+        font-size: 14px;
+    }
+
+    .accordion-body {
+        font-size: 12px !important;
+    }
+
 }
 
 // PARTNER SHIP
@@ -444,6 +775,33 @@ header .background-image {
     }
 }
 
+@media screen and (max-width: 475px) {
+    .partner-sec .partner {
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .partner-sec p {
+        font-size: 20px;
+    }
+
+    .partner-sec i {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    .partner-sec .flex {
+        display: block;
+        gap: 0;
+        text-align: center;
+    }
+
+    .partner-sec .p-img img {
+        width: 200px;
+    }
+}
+
 
 // SIGN UP  MENU
 .sign-up-menu {
@@ -489,36 +847,47 @@ header .background-image {
 }
 
 @media screen and (max-width: 990px) {
+    .sign-up-menu .gridient-bg {
+        height: 614px;
+
+    }
+
     .sign-up-menu .gridient-bg h6 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .sign-up-menu .gridient-bg p {
-        font-size: 14px;
+        font-size: 16px;
         width: 277px;
     }
 
     .sign-up-menu .gridient-bg img {
-        position: absolute;
-        right: -67px;
+        position: relative;
+        right: -80px;
         top: -19px;
         width: 70%;
 
     }
 
+    .single-btn {
+        width: 100%;
+    }
+
+
+
+
 }
 
 @media screen and (max-width: 768px) {
     .sign-up-menu .gridient-bg {
-        height: 340px;
-
+        height: 614px;
     }
 
     .sign-up-menu .gridient-bg img {
         position: relative;
-        width: 156%;
-        top: -73px;
-        right: 48px;
+        right: -80px;
+        top: -19px;
+        width: 70%;
 
     }
 
@@ -540,14 +909,14 @@ header .background-image {
 
 @media screen and (max-width: 766px) {
     .sign-up-menu .gridient-bg {
-        height: 95%;
+        height: 100%;
 
     }
 
     .sign-up-menu .gridient-bg img {
         position: relative;
         width: 100%;
-        top: 3px;
+        top: 40px;
         right: 0;
     }
 
@@ -575,6 +944,19 @@ header .background-image {
         font-size: 10px;
         width: 202px;
     }
+}
+
+@media screen and (max-width: 320px) {
+    .sign-up-menu .gridient-bg .responsive {
+        padding: 26px !important;
+
+    }
+
+    .sign-up-menu .gridient-bg {
+        height: 95%;
+
+    }
+
 }
 
 
@@ -648,4 +1030,19 @@ header .background-image {
 
 .footer .copy-right {
     padding-top: 80px !important;
+}
+
+// responsive
+@media (max-width: 425px) {
+    .footer .golden-box h6 {
+
+        font-size: 22px;
+
+
+    }
+    .footer .footer-links ul {
+        gap: 25px;
+    }
+
+
 }
