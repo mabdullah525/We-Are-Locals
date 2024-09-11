@@ -212,7 +212,7 @@ header .background-image {
     }
 
     .hero p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .hero .hero-btn {
@@ -226,7 +226,7 @@ header .background-image {
 @media (max-width: 766px) {
     .hero .row {
         display: flex;
-        gap: 30px;
+        gap: 80px;
     }
 
     .img-setting img {
@@ -240,7 +240,7 @@ header .background-image {
     }
 
     .hero p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 }
@@ -254,12 +254,26 @@ header .background-image {
     .header .btn-primary {
         margin-left: 0;
     }
+    .hero .bl-btn {
+        background-color: #000505 !important;
+        color: #D4AF37 !important;
+        width: 200px;
+    }
+
+    .hero .bl-btn:hover {
+        background-color: #D4AF37 !important;
+        color: #ffffff !important;
+
+    }
+    .header .navbar .navbar-brand img {
+        height: 40px;
+    }    
 }
 
 @media (max-width: 320px) {
     .hero .row {
         display: flex;
-        gap: 56px;
+        gap: 60px;
     }
 
     .img-setting img {
@@ -357,10 +371,11 @@ header .background-image {
 
     .section .box-body i {
         font-size: 20px;
-        width: 66px;
+        width: 40px;
         height: 40px;
         border-radius: 50%;
         line-height: 2;
+        flex-shrink: 0;
     }
 
     .section .box-body .content h4 {
@@ -611,7 +626,7 @@ header .background-image {
 
     .chose-sec .border-line {
         padding: 0;
-        margin-block: 50px;
+        margin-block: 24px;
     }
 
     .chose-sec .three-boxes {
@@ -937,16 +952,32 @@ header .background-image {
     }
 
     .sign-up-menu .gridient-bg h6 {
-        font-size: 21px;
+        font-size: 22px;
     }
 
     .sign-up-menu .gridient-bg p {
-        font-size: 10px;
+        font-size: 11px;
         width: 202px;
+    }
+    .sign-up-menu .gridient-bg .responsive {
+        padding: 26px !important;
+
     }
 }
 
 @media screen and (max-width: 320px) {
+    .sign-up-menu .gridient-bg .responsive {
+        padding: 26px !important;
+
+    }
+
+    .sign-up-menu .gridient-bg {
+        height: 95%;
+
+    }
+
+}
+@media screen and (max-width: 375px) {
     .sign-up-menu .gridient-bg .responsive {
         padding: 26px !important;
 

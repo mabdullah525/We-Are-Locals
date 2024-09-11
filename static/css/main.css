@@ -9408,7 +9408,7 @@ header .background-image {
   .hero h1, .hero .h1 {
     font-size: 28px; }
   .hero p {
-    font-size: 10px; }
+    font-size: 12px; }
   .hero .hero-btn {
     display: flex;
     gap: 10px; } }
@@ -9416,7 +9416,7 @@ header .background-image {
 @media (max-width: 766px) {
   .hero .row {
     display: flex;
-    gap: 30px; }
+    gap: 80px; }
   .img-setting img {
     right: -42px;
     position: relative;
@@ -9424,7 +9424,7 @@ header .background-image {
   .hero h1, .hero .h1 {
     font-size: 28px; }
   .hero p {
-    font-size: 10px; } }
+    font-size: 12px; } }
 
 @media (max-width: 425px) {
   .nav-link {
@@ -9433,12 +9433,21 @@ header .background-image {
     font-size: 15px !important;
     font-weight: 400; }
   .header .btn-primary {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .hero .bl-btn {
+    background-color: #000505 !important;
+    color: #D4AF37 !important;
+    width: 200px; }
+  .hero .bl-btn:hover {
+    background-color: #D4AF37 !important;
+    color: #ffffff !important; }
+  .header .navbar .navbar-brand img {
+    height: 40px; } }
 
 @media (max-width: 320px) {
   .hero .row {
     display: flex;
-    gap: 56px; }
+    gap: 60px; }
   .img-setting img {
     right: -42px;
     position: relative;
@@ -9502,10 +9511,11 @@ header .background-image {
     padding: 20px; }
   .section .box-body i {
     font-size: 20px;
-    width: 66px;
+    width: 40px;
     height: 40px;
     border-radius: 50%;
-    line-height: 2; }
+    line-height: 2;
+    flex-shrink: 0; }
   .section .box-body .content h4, .section .box-body .content .h4 {
     font-size: 20px;
     width: 100%; }
@@ -9663,7 +9673,7 @@ header .background-image {
     font-size: 12px; }
   .chose-sec .border-line {
     padding: 0;
-    margin-block: 50px; }
+    margin-block: 24px; }
   .chose-sec .three-boxes {
     padding: 0 !important; }
   .chose-sec .three-boxes h5, .chose-sec .three-boxes .h5 {
@@ -9860,12 +9870,20 @@ header .background-image {
   .sign-up-menu .gridient-bg {
     height: 95%; }
   .sign-up-menu .gridient-bg h6, .sign-up-menu .gridient-bg .h6 {
-    font-size: 21px; }
+    font-size: 22px; }
   .sign-up-menu .gridient-bg p {
-    font-size: 10px;
-    width: 202px; } }
+    font-size: 11px;
+    width: 202px; }
+  .sign-up-menu .gridient-bg .responsive {
+    padding: 26px !important; } }
 
 @media screen and (max-width: 320px) {
+  .sign-up-menu .gridient-bg .responsive {
+    padding: 26px !important; }
+  .sign-up-menu .gridient-bg {
+    height: 95%; } }
+
+@media screen and (max-width: 375px) {
   .sign-up-menu .gridient-bg .responsive {
     padding: 26px !important; }
   .sign-up-menu .gridient-bg {
